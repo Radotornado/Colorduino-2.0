@@ -35,7 +35,7 @@ B01010,
 B01010,
 B00000
 };
-byte e[8] = {
+byte e[8] = {                                                     //Създават се буквите пиксел по пиксел
 B00000,
 B01110,
 B01000,
@@ -237,23 +237,23 @@ void loop()
   {                                                                                                                     //
    wtv020sd16p.playVoice(2);                                                                                            //ако е така - изпълнява се петия музикален файл - изговарящ кафяво
    lcd.createChar(0, a);
-lcd.createChar(1, o);
-lcd.createChar(2, ya);
-lcd.createChar(3, v);
-lcd.createChar(4, f);
-lcd.createChar(5, k);
-lcd.setCursor(0,0);
-lcd.write((byte)5);
-lcd.setCursor(1,0);
-lcd.write((byte)0);
-lcd.setCursor(2,0);
-lcd.write((byte)4);
-lcd.setCursor(3,0);
-lcd.write((byte)2);
-lcd.setCursor(4,0);
-lcd.write((byte)3);
-lcd.setCursor(5,0);
-lcd.write((byte)1);                                                                                                 //и показва за 5 секунди на диспля "кафяво"
+   lcd.createChar(1, o);
+   lcd.createChar(2, ya);
+   lcd.createChar(3, v);
+   lcd.createChar(4, f);
+   lcd.createChar(5, k);
+   lcd.setCursor(0,0);
+   lcd.write((byte)5);
+   lcd.setCursor(1,0);
+   lcd.write((byte)0);
+   lcd.setCursor(2,0);
+   lcd.write((byte)4);
+   lcd.setCursor(3,0);
+   lcd.write((byte)2);
+   lcd.setCursor(4,0);
+   lcd.write((byte)3);
+   lcd.setCursor(5,0);
+   lcd.write((byte)1);                                                                                                 //и показва за 3.5 секунди на диспля "кафяво"
    delay (3500);                                                                                                        //
    lcd.clear ();                                                                                                        //след това се изчиства
   }
@@ -278,7 +278,7 @@ lcd.write((byte)1);                                                             
    lcd.setCursor(5,0);
    lcd.write((byte)4);
    delay(3500);
-   lcd.clear();                                                                                                  //и показва за 5 секунди на диспля "зелено"                                                                                                       //след това се изчиства
+   lcd.clear();                                                                                                  //и показва за 3.5 секунди на диспля "зелено"                                                                                                       //след това се изчиства
   }
   
    
@@ -302,7 +302,7 @@ if (red==19 || red==20 || red==21 && green==17 || green==18 || green==19 && blue
    lcd.setCursor(4,0);
    lcd.write((byte)4);
    delay(3500);
-   lcd.clear();                                                                                                   //и показва за 5 секунди на диспля "синьо"                                                                                                        //след това се изчиства
+   lcd.clear();                                                                                                   //и показва за 3.5 секунди на диспля "синьо"                                                                                                        //след това се изчиства
   }
   
   
@@ -331,7 +331,7 @@ if (red==19 || red==20 || red==21 && green==17 || green==18 || green==19 && blue
   lcd.setCursor(6,0);
   lcd.write((byte)5);
   delay(3500);
-  lcd.clear();                                                                                                  //и показва за 5 секунди на диспля "червено"                                                                                                       //след това се изчиства
+  lcd.clear();                                                                                                  //и показва за 3.5 секунди на диспля "червено"                                                                                                       //след това се изчиства
   }
 
   
@@ -354,7 +354,7 @@ if (red==19 || red==20 || red==21 && green==17 || green==18 || green==19 && blue
   lcd.setCursor(4,0);
   lcd.write((byte)4);
   delay(3500);
-  lcd.clear();                                                                                                //и показва за 5 секунди на диспля "жълто"                                                                                                       //след това се изчиства
+  lcd.clear();                                                                                                //и показва за 3.5 секунди на диспля "жълто"                                                                                                       //след това се изчиства
   }
   
   
